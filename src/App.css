@@ -1,38 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.form-container {
+  background: linear-gradient(to bottom, #294f88, #6166a0, #917eb7, #bd99cd, #e8b5e2);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.input-container h2 {
+  font-weight: 700;
+  font-size: 45px;
+  margin: 10px 0;
   color: white;
+  text-shadow: 3px 3px 3px lightgray;
+  cursor: default;
 }
 
-.App-link {
-  color: #61dafb;
+.input-container .sub-container {
+  width: 85%;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-container .sub-container span {
+  font-size: 25px;
+  color: white;
+  cursor: default;
+}
+
+.input-container .sub-container input {
+  height: 50px;
+  width: 65%;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  padding: 0 18px;
+}
+
+.input-container .submit-btn {
+  margin-top: 20px;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.show-details {
+  /* border: 1px solid white; */
+  margin: 30px auto;
+  margin-bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.show-details .detail {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 15px 65px;
+  height: 45px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.form-container .back-btn {
+  margin: 30px;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-container h2 {
+  font-weight: 700;
+  font-size: 45px;
+  margin: 10px 0;
+  color: white;
+  text-shadow: 3px 3px 3px lightgray;
+  cursor: default;
 }
